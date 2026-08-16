@@ -1,3 +1,5 @@
+
+```sh
 $MODEL = if ($env:MODEL) { $env:MODEL } else { "sakamakismile/Qwen3.8-27B-MTP-NVFP4" }
 $SERVED_MODEL = if ($env:SERVED_MODEL) { $env:SERVED_MODEL } else { "qwen38-27b-mtp-nvfp4" }
 
@@ -22,3 +24,4 @@ docker run --gpus all --ipc=host `
   --disable-custom-all-reduce `
   --enable-prefix-caching `
   --override-generation-config '{\"temperature\":1.0,\"top_p\":0.95,\"top_k\":20,\"min_p\":0.0,\"presence_penalty\":0.0,\"repetition_penalty\":1.0}'
+```
