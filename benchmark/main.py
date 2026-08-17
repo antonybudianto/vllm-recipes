@@ -1,6 +1,3 @@
-
-```sh
-docker exec -it c63744cd7994 python3 -c "
 import json, urllib.request, time
 
 url = 'http://localhost:8000/v1/completions'
@@ -30,5 +27,3 @@ completion_tokens = res['usage']['completion_tokens']
 print(f'Prompt Tokens: {prompt_tokens} | Completion Tokens: {completion_tokens}')
 print(f'Total Latency: {total_time:.2f}s')
 print(f'End-to-End Speed: {completion_tokens / total_time:.1f} tok/s')
-"
-```

@@ -1,6 +1,3 @@
-
-```sh
-docker exec -it 99144ee1ecf5 python3 -c "
 import json, urllib.request, time
 
 url = 'http://localhost:8000/v1/completions'
@@ -26,5 +23,3 @@ pp_speed = prompt_tokens / ttft
 print(f'Prompt Tokens: {prompt_tokens}')
 print(f'TTFT (Prefill Latency): {ttft*1000:.1f} ms')
 print(f'PP Speed (Prompt Processing): {pp_speed:.1f} tok/s')
-"
-```
